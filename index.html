@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sagar sitaula</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dosis&family=Josefin+Sans:wght@400;500&family=Jost&family=Montserrat:wght@300&family=Mulish:wght@500&family=Open+Sans:wght@300;700&family=Pacifico&family=Poppins:ital,wght@0,300;0,600;0,800;1,700&family=Raleway:wght@500;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: rgb(6, 6, 15);
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar{
+            position: sticky;
+            top: 0;
+            padding: 20px;
+            z-index: 9999;
+            background-color: rgb(22, 35, 80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .navbar li{
+            font-size: 18px;
+            margin: 0px 4vw;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        .whole{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .left-heading{
+            /* border: 3px solid white; */
+            margin-top: 8vw;
+            margin-right: 12vw;
+            margin-left: 12vw;
+            font-size: 7vmin;
+        }
+        .right-heading{
+            /* background-color: rgb(24, 35, 68); */
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 15vmin;
+            color: rgb(255, 255, 255);
+            margin-top: 8vw;
+            margin-right: 10vw;
+            margin-left: 10vw;
+        }
+        .right-heading i{
+            animation:  ease-in-out rotate-code 5s infinite;
+        }
+        #section-one{
+            margin-top: 125px;
+        }
+        .left-heading span{
+            color: rgb(36, 245, 154);
+        }
+        @keyframes rotate-code{
+            0%{transform:rotate(0deg); color: white;}
+            50%{transform:rotate(360deg); color: rgb(0, 255, 140);}
+            100%{transform:rotate(0deg); color: white;}
+        }
+        .left-heading button#channelBtn{
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            font-size: 2.5vmin;
+            outline: none;
+            border: none;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            transition: 0.2s;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            outline: none;
+            background-color: rgb(20, 20, 65);
+        }
+        .left-heading button#channelBtn:hover{
+            cursor: pointer;
+            box-shadow: 2px 3px 0px rgb(39, 74, 169);
+        }
+        .left-heading h2{
+            font-weight: lighter;
+            font-size: 2.5vmin;
+            /* border: 3px solid red; */
+            text-align: center;
+            width: 75vmin;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2vmin;
+            margin-bottom: 5vmin;
+        }
+        hr{
+            border: 2px solid rgb(21, 251, 148);
+        }
+        hr#hr-one{
+            margin-top: 12vw;
+            margin-bottom: 5vmin;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        section#section-two{
+            color: white;
+        }
+        .bottom-content{
+            font-size: 2vmax;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 20px;
+            align-items: center;
+        }
+        h1#video-head{
+            border-bottom: 3px solid white;
+        }
+        .boxes{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .box{
+            box-shadow: 3px 4px 0px rgb(62, 99, 195);
+            width: 300px;
+            margin: 50px;
+            height: 200px;
+            background-color: rgb(21, 21, 57);
+            align-items: center;
+            display: flex;
+            border-radius: 13px;
+            transition: ease-in-out 0.2s;
+            justify-content: center;
+        }
+        .box:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+        .box i{
+            font-size: 50px;
+            text-align: center;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        section#section-two a{
+            color: white;
+            text-decoration: none;
+        }
+        #html i{
+            color: orange;
+        }
+        #js i{
+            color: yellow;
+        }
+        #php i{
+            color: rgb(69, 69, 238);
+        }
+        #css i{
+            color: rgb(7, 71, 174);
+        }
+        #node-js i{
+            color: rgb(28, 230, 85);
+        }
+        #django i{
+            color: rgb(22, 255, 84);
+        }
+        #python i{
+            color: rgb(42, 213, 213);
+        }
+        #flask i{
+            color: rgb(255, 255, 255);
+        }
+        .left-heading a{
+            text-decoration: none;
+        }
+        #popular-span{
+            color: rgb(36, 245, 154);
+        }
+        hr#hr-two{
+            margin-top: 4.5vw;
+            margin-bottom: 5vmin;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        section#section-three{
+            color: white;
+        }
+        .notes-content{
+            text-align: center;
+            font-size: 2vmax;
+        }
+        .notes-pages{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2vmax;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .notes-content  h1#video-head{
+            width: 16.5vmax;
+            margin: auto;
+        }
+        .notes-pages .box h1{
+            font-size: 5vmin;
+            color: white;
+        }
+        .notes-pages .box h1#html-h1{
+            color: rgb(255, 166, 0);
+        }
+        .notes-pages .box h1#css-h1{
+            color: rgb(45, 150, 255);
+        }
+        .notes-pages .box h1#js-h1{
+            color: rgb(234, 255, 0);
+        }
+        .notes-pages .box h1#python-h1{
+            color: rgb(29, 176, 255);
+        }
+        #section-three a{
+            text-decoration: none;
+        }
+        li#logo a{
+            font-weight: bolder;
+            font-size: 25px;
+            color: rgb(21, 251, 148);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+    
+            <li><a href="#section-one">Home</a></li>
+            <li><a href="#section-two">Videos</a></li>
+            <li><a href="#section-three">Notes</a></li>
+        </ul>
+    </div>
+    <section id="section-one">
+    <div class="whole">
+        <div class="left-heading">
+            <h1 id="title"><span>sagar</span>sitaula<span>.</span></h1>
+            <h2>There are only <span>10</span> types of people, the one <span>
+            understands</span> binary and the other one <span>doesn't.</span></h2>
+            <a href="git@github.com:sagarsitaula94/loginwebsite.git" target="_blank"><button id="channelBtn">visit github</button></a>
+        </div>
+        <div class="right-heading">
+            <i class="fa-solid fas fa-code"></i>
+        </div>
+    </div>
+</section>
+
+</div>
+<hr id="hr-two">
+</section>
+<section id="section-three">
+    <div class="notes-content">
+    <h1 id="video-head"><span id="popular-span">Free</span> Notes</h1>
+    <div class="notes-pages">
+        <div class="box">
+            <a href="https://cwh-full-next-space.fra1.digitaloceanspaces.com/downloads/videos/html-tutorial-for-beginners/HTML_Complete_Notes.pdf"><h1 id="html-h1"><i class="fa-solid fab fa-html5"></i> Notes</h1></a>
+        </div>
+        <div class="box">
+            <a href="https://cwh-full-next-space.fra1.digitaloceanspaces.com/downloads/videos/css-in-one-video/CSS_Complete_Notes.pdf"><h1 id="css-h1"><i class="fa-solid fab fab fab fa-css3-alt"></i> Notes</h1></a>
+        </div>
+        <div class="box">
+            <a href="https://cwh-full-next-space.fra1.digitaloceanspaces.com/downloads/videos/ultimate-js-tutorial-hindi-1/JS%20All%20in%20One%20Notes.pdf"><h1 id="js-h1"><i class="fa-solid fab fab fa-js-square"></i> Notes</h1></a>
+        </div>
+        <div class="box">
+            <a href="https://cwh-full-next-space.fra1.digitaloceanspaces.com/downloads/videos/python-tutorial-easy-for-beginners/Python_Complete_Notes.pdf"><h1 id="python-h1"><i class="fa-solid fab fab fab fab fa-python"></i> Notes</h1></a>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+</html>
